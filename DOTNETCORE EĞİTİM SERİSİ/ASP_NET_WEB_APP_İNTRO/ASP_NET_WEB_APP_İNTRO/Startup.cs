@@ -48,10 +48,15 @@ namespace ASP_NET_WEB_APP_İNTRO
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapDefaultControllerRoute(); // aynı bu öğrenmiş ol şimdiden
             });
+
+            // el ile yapılandırılmış yeni endpoint (hangi controller i verirsen sana onun indexini )
+            // otomatik olarak döndürmektedir. 
 
             //app.UseEndpoints(endpoints =>
             //{

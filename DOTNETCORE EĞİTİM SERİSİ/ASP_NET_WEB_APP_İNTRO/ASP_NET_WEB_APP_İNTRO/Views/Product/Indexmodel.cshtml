@@ -1,0 +1,24 @@
+﻿@model ProductListViewModel
+
+
+@{
+    ViewData["Title"] = "Indexmodel";
+}
+
+<h1>Indexmodel Modelview içerisinden gelen class verileri : </h1>
+
+ 
+@foreach(var item in Model.Employesses)
+{
+    @item.ID;
+     @item.ISIM;
+     @item.SOYİSİM;
+
+}
+
+ @*
+@foreach(var item in Model.Products)
+{
+    <p> @item.ID   + @item.Ürün_Adı +@item.Ürün_Tipi + @item.Ürün_Adı   </p>
+}*@
+     

@@ -1,4 +1,6 @@
-﻿
+﻿@model List<ASP_NET_WEB_APP_İNTRO.Entities.Product> 
+
+
 @{
     ViewData["Title"] = "Viewdenemesi";
 }
@@ -7,4 +9,37 @@
 <h3 style="text-align : center ">ismi index ismi 
     ile aynı olmamasına rağmen fonksiyon içerisindeki view isimlendirilerek çağırılmıştır</h3>
 
+    <h4> Ürünler listesi : </h4>
+    <br />
+    <br />
+
+<table>
+    <tr>
+        <td>
+            ÜRÜN İD 
+        </td>
+         <td>
+            Ürün Adı
+        </td>
+         <td>
+            ÜRÜN Tipi
+        </td>
+         <td>
+            Stok Miktarı
+        </td>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.Ürün_Adı</td>
+        <td>@item.Ürün_Tipi</td>
+        <td>@item.Stok_Miktarı</td>
+    </tr>
+}
+
+</table>
+ 
+
+<bold> @Model.Count  adet Ürün Listelenmiştir .</bold>
 

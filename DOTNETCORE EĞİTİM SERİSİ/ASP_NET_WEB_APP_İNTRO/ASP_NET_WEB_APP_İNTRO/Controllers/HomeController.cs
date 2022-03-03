@@ -27,6 +27,8 @@ namespace ASP_NET_WEB_APP_İNTRO.Controllers
             return View();
         }
 
+        // ilk model denemesi 
+        
         public IActionResult Privacy()
         {
             return View();
