@@ -108,6 +108,7 @@ namespace ASP_NET_WEB_APP_İNTRO.Controllers
             return View("Viewdenemesi", ürünlerlistesi);
         }
 
+
         public IActionResult ahmet2()
         {
             List<Product> ürünlerlistesi = new List<Product>
@@ -130,6 +131,24 @@ namespace ASP_NET_WEB_APP_İNTRO.Controllers
 
 
             return View("indexmodel", ürünlerlistesi);
+        }
+
+
+
+        [HttpGet]
+        public IActionResult saveemployes()
+        {
+            return View(new SaveEmployeeViewModel());
+        }
+
+
+
+
+        [HttpPost]
+        public IActionResult saveemployes(SaveEmployeeViewModel e)
+        {
+
+            return  View();
         }
 
     }
