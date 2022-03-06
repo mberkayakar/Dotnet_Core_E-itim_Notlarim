@@ -234,3 +234,4 @@ C:\Users\Muhammed Berkay AKAR\Desktop\Dotnet_Core_E-itim_Notlarim\DOTNETCORE EĞ
 C:\Users\Muhammed Berkay AKAR\Desktop\Dotnet_Core_E-itim_Notlarim\DOTNETCORE EĞİTİM SERİSİ\ASP_NET_WEB_APP_İNTRO\ASP_NET_WEB_APP_İNTRO\obj\Debug\net5.0\ref\ASP_NET_WEB_APP_İNTRO.dll
 C:\Users\Muhammed Berkay AKAR\Desktop\Dotnet_Core_E-itim_Notlarim\DOTNETCORE EĞİTİM SERİSİ\ASP_NET_WEB_APP_İNTRO\ASP_NET_WEB_APP_İNTRO\obj\Debug\net5.0\Razor\Views\Product\Indexmodel.cshtml.g.cs
 C:\Users\Muhammed Berkay AKAR\Desktop\Dotnet_Core_E-itim_Notlarim\DOTNETCORE EĞİTİM SERİSİ\ASP_NET_WEB_APP_İNTRO\ASP_NET_WEB_APP_İNTRO\obj\Debug\net5.0\Razor\Views\Product\saveemployes.cshtml.g.cs
+C:\Users\Muhammed Berkay AKAR\Desktop\Dotnet_Core_E-itim_Notlarim\DOTNETCORE EĞİTİM SERİSİ\ASP_NET_WEB_APP_İNTRO\ASP_NET_WEB_APP_İNTRO\bin\Debug\net5.0\libman.json

@@ -23,6 +23,10 @@ namespace ASP_NET_WEB_APP_İNTRO
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
+
+
+
             services.AddControllersWithViews();
         }
 
@@ -42,28 +46,36 @@ namespace ASP_NET_WEB_APP_İNTRO
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
+
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                //endpoints.MapControllerRoute(
-                //    name: "default",
-                //    pattern: "{controller=Home}/{action=Index}/{id?}");
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    //endpoints.MapControllerRoute(
+            //    //    name: "default",
+            //    //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-                endpoints.MapDefaultControllerRoute(); // aynı bu öğrenmiş ol şimdiden
-            });
+            //    endpoints.MapDefaultControllerRoute(); // aynı bu öğrenmiş ol şimdiden
+            //});
 
             // el ile yapılandırılmış yeni endpoint (hangi controller i verirsen sana onun indexini )
             // otomatik olarak döndürmektedir. 
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller}/{action=Index}/{id?}");
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller}/{action}/{id?}");
+
+                endpoints.MapControllerRoute(
+                 name: "admin",
+                 pattern: "admin/{controller}/{action}/{id?}");
+
+                // domain / admin /controller/action
+            });
         }
     }
 }
