@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Business >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Muhammed Berkay AKAR\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Muhammed Berkay AKAR\\Desktop\\Dotnet_Core_E-itim_Notlarim\\NorthwindLevelTwo\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Muhammed Berkay AKAR\\Desktop\\Dotnet_Core_E-itim_Notlarim\\NorthwindLevelTwo\\Business\\Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -71,5 +94,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Business is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project Business supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Business",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

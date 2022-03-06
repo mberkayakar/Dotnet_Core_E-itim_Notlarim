@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "ixvEIC2LVZTMlQicp0EQJqhnp2WvsVVN4Ei9LRZMq4bbXzpQy1lksJ11JYLvYwFqlcqRnDL4uEdsfh+KPvUlYw==",
-  "success": true,
+  "dgSpecHash": "70XAKwyhht4PNzP7Cyxl09+Kjt7Djug7ijlI9YWrq+mihTXjnWfmKcrzAV6jqexvW82kAwZlw+VdOzmhqCnJwg==",
+  "success": false,
   "projectFilePath": "C:\\Users\\Muhammed Berkay AKAR\\Desktop\\Dotnet_Core_E-itim_Notlarim\\NorthwindLevelTwo\\MvcWebUI\\MvcWebUI.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Business is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project Business supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Business",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
